@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import Stopwatch from './Stopwatch';
+import Timer from './Timer';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-    </>
-  )
+    <div className="app-container">
+      <h1>Timer and Stopwatch</h1>
+      <div className="components-container">
+        <Stopwatch />
+        <Timer />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
