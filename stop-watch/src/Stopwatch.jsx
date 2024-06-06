@@ -23,7 +23,7 @@ function Stopwatch() {
     function start() {
         setIsRunning(true);
         startTimeRef.current = Date.now() - elapsedTime;
-        console.log(startTimeRef.current);
+        // console.log(startTimeRef.current);
 
     }
 
